@@ -17,6 +17,9 @@ Here below the methods you can use to navigate between pages when testing:
 - \#quit
     - Stops the browser
 
+# Extension files
+The extension files should be placed into the data directory and then reference it in the code only by the filename because the code is already looking into the data directory.
+
 # How to run
 
 Inside the bin folder you will have to create the new tests and then you can run every test simply going to the Ruby console:
