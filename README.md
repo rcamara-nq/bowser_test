@@ -1,6 +1,7 @@
 This project is intended to help in the test process of the project Bowser. It is a browser plugin so, testing some features are difficult some times.
 
 We have a configuration file config/test_config.yml where you can setup the pincode and the *Steps Url* where the user installs the extension. The project will install automatically the extension in the browser (Chrome for now) and you can write then the next actions to take (go to x website, etc...).
+Copy the file config/test_config.yml.dist and rename it to config/test_config.yml.
 
 # API methods
 
@@ -15,3 +16,12 @@ Here below the methods you can use to navigate between pages when testing:
     - Executes JS code in the current window
 - \#quit
     - Stops the browser
+
+# How to run
+
+Inside the bin folder you will have to create the new tests and then you can run every test simply going to the Ruby console:
+```
+irb
+require_relative '.bin/file.rb'
+```
+And the test should start, you'll know because a browser window will pop up.
